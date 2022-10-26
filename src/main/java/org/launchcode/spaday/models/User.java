@@ -14,7 +14,7 @@ public class User {
     private String email;
 
     @NotBlank(message = "Enter a password.")
-    @Min(value = 6, message = "Password must be at least 6 characters long.")
+    @Size(min = 6, message = "Password must be at least 6 characters long.")
     private String password;
 
     public User() {
